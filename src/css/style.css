@@ -36,7 +36,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   width: 100%;
   margin: auto;
   padding: 0 24px;
@@ -147,6 +147,40 @@ input, select {
 }
 .login .login_container form input[type=text]:focus::placeholder {
   opacity: 0.5;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.video h1 {
+  font-family: "Gothic";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 640px) {
+  .video h1 {
+    font-size: 84px;
+  }
+}
+.video .video_container {
+  width: 100%;
+}
+@media (min-width: 640px) and (max-width: 1360px) {
+  .video .video_container {
+    width: 80%;
+  }
+}
+.video .video_container video {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
