@@ -3,8 +3,35 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .scrollDisabled {
   overflow-y: hidden !important;
+}
+
+.background {
+  @include flex(row, center, center, false);
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  background: url("../images/bg.png"), radial-gradient(circle, rgba(254,220,121,1) 0%, rgba(219,26,61,1) 88%);;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.wrapper {
+  width: 100%;
 }
 
 input, select {
@@ -13,35 +40,20 @@ input, select {
 
 .btn {
   outline: none;
+  border: none;
+  background-color: $secondary;
+  border-radius: 5px;
   cursor: pointer;
-  border: 0;
 
-  &.primary {
+  padding: 8px 32px;
 
-    &.small {}
-  }
-  
-  &.secondary {
+  @include ff-gothic;
+  @include font-size($text-xs);
+  color: $white;
 
-    &.small {}
-  }
+  transition: transform 0.2s cubic-bezier(0.65, 0.39, 0.5, 1.63);
 
-  &.goopen {
-    padding: 16px 32px;
-
-    @include ff-gothic;
-    font-size: 14px;
-
-    border-radius: 25px;
-
-    transition: transform 0.3s cubic-bezier(0.65, 0.39, 0.5, 1.63);
-
-    &:hover {
-      transform: translateY(-4px);
-    }
-  }
-
-  &.fullwidth {
-    width: 100%;
+  &:hover {
+    transform: translateY(-4px);
   }
 }

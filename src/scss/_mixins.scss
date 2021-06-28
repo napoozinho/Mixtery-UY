@@ -4,10 +4,10 @@
   font-weight: normal;
 }
 
-@mixin text-xl {
-  font-size: $text-xl;
-  line-height: 101px;
-}
+// @mixin text-xl {
+//   font-size: $text-xl;
+//   line-height: 101px;
+// }
 @mixin text-l {
   font-size: $text-l;
   line-height: 76px;
@@ -60,5 +60,22 @@
     flex-wrap: wrap;
   } @else {
     flex-wrap: nowrap;
+  }
+}
+
+
+
+
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
   }
 }

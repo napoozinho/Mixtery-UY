@@ -1,0 +1,60 @@
+.login {
+  @include flex(column, center, center, false);
+
+  h1 {
+    @include ff-gothic;
+    @include font-size($text-xl);
+    color: $white;
+    text-align: center;
+    margin-bottom: 33px;
+  }
+
+  .login_container {
+    max-width: 780px;
+    width: 100%;
+
+    padding: 40px 24px 80px 24px;
+
+    border-radius: 10px;
+    background-color: $white;
+
+    form {
+      @include flex(column, center, center, false);
+
+      label {
+        margin-bottom: 60px;
+
+        @include ff-gothic;
+        @include font-size($text-m);
+        color: $primary;
+        text-align: center;
+      }
+
+      input[type="text"] {
+        max-width: 462px;
+        width: 100%;
+
+        margin-bottom: 40px;
+        padding: 16px 20px;
+
+        border: 1px solid $primary;
+        border-radius: 10px;
+
+        @include ff-gothic;
+        @include font-size($text-xs);
+        color: $primary;
+
+        &::placeholder {
+          color: $primary;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:focus {
+          &::placeholder {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}

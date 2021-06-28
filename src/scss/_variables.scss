@@ -8,9 +8,8 @@ $secondary: #f7aa08;
 
 // TYPOGRAPHY START
 $gothic: 'Gothic';
-$text-xl: 84px;
-$text-l: 63px;
-$text-m: 42px;
-$text-s: 28px;
-$text-xs: 18px;
-// TYPOGRAPHY END
+$text-xl: (null: 42px, 640px: 84px);
+$text-l:  (null: 32px, 640px: 64px);
+$text-m:  (null: 20px, 640px: 42px);
+$text-s:  (null: 14px, 640px: 28px);
+$text-xs: (null: 14px, 640px: 18px);

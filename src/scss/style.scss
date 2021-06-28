@@ -2,15 +2,11 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-/* Global CSS */
-@import "global.scss";
-
-/* Colors CSS */
-@import "colors.scss";
-
 /* Typography CSS */
 @import "typography.scss";
 
-/* Components */
+/* Global CSS */
+@import "global.scss";
 
 /* Pages */
+@import "pages/login.scss";

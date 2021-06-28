@@ -1,12 +1,49 @@
 /* Core variables and mixins */
+/* Typography CSS */
+@font-face {
+  font-display: fallback;
+  font-family: "Gothic";
+  src: url(../fonts/TradeGothicLTStd-BdCn20.otf);
+}
 /* Global CSS */
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .scrollDisabled {
   overflow-y: hidden !important;
+}
+
+.background {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  background: url("../images/bg.png"), radial-gradient(circle, #fedc79 0%, #db1a3d 88%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.wrapper {
+  width: 100%;
 }
 
 input, select {
@@ -15,33 +52,101 @@ input, select {
 
 .btn {
   outline: none;
+  border: none;
+  background-color: #f7aa08;
+  border-radius: 5px;
   cursor: pointer;
-  border: 0;
-}
-.btn.goopen {
-  padding: 16px 32px;
+  padding: 8px 32px;
   font-family: "Gothic";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  border-radius: 25px;
-  transition: transform 0.3s cubic-bezier(0.65, 0.39, 0.5, 1.63);
+  color: white;
+  transition: transform 0.2s cubic-bezier(0.65, 0.39, 0.5, 1.63);
 }
-.btn.goopen:hover {
+@media screen and (min-width: 640px) {
+  .btn {
+    font-size: 18px;
+  }
+}
+.btn:hover {
   transform: translateY(-4px);
 }
-.btn.fullwidth {
-  width: 100%;
-}
 
-/* Colors CSS */
-/* Typography CSS */
-@font-face {
-  font-display: fallback;
-  font-family: "Gothic";
-  src: url(../fonts/TradeGothicLTStd-BdCn20.otf);
-}
-/* Components */
 /* Pages */
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.login h1 {
+  font-family: "Gothic";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  color: white;
+  text-align: center;
+  margin-bottom: 33px;
+}
+@media screen and (min-width: 640px) {
+  .login h1 {
+    font-size: 84px;
+  }
+}
+.login .login_container {
+  max-width: 780px;
+  width: 100%;
+  padding: 40px 24px 80px 24px;
+  border-radius: 10px;
+  background-color: white;
+}
+.login .login_container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.login .login_container form label {
+  margin-bottom: 60px;
+  font-family: "Gothic";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #db203b;
+  text-align: center;
+}
+@media screen and (min-width: 640px) {
+  .login .login_container form label {
+    font-size: 42px;
+  }
+}
+.login .login_container form input[type=text] {
+  max-width: 462px;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 16px 20px;
+  border: 1px solid #db203b;
+  border-radius: 10px;
+  font-family: "Gothic";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #db203b;
+}
+@media screen and (min-width: 640px) {
+  .login .login_container form input[type=text] {
+    font-size: 18px;
+  }
+}
+.login .login_container form input[type=text]::placeholder {
+  color: #db203b;
+  transition: all 0.3s ease-in-out;
+}
+.login .login_container form input[type=text]:focus::placeholder {
+  opacity: 0.5;
+}
 
 /*# sourceMappingURL=style.css.map */
