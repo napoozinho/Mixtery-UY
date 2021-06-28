@@ -1,0 +1,47 @@
+/* Core variables and mixins */
+/* Global CSS */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.scrollDisabled {
+  overflow-y: hidden !important;
+}
+
+input, select {
+  outline: none;
+}
+
+.btn {
+  outline: none;
+  cursor: pointer;
+  border: 0;
+}
+.btn.goopen {
+  padding: 16px 32px;
+  font-family: "Gothic";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  border-radius: 25px;
+  transition: transform 0.3s cubic-bezier(0.65, 0.39, 0.5, 1.63);
+}
+.btn.goopen:hover {
+  transform: translateY(-4px);
+}
+.btn.fullwidth {
+  width: 100%;
+}
+
+/* Colors CSS */
+/* Typography CSS */
+@font-face {
+  font-display: fallback;
+  font-family: "Gothic";
+  src: url(../fonts/TradeGothicLTStd-BdCn20.otf);
+}
+/* Components */
+/* Pages */
+
+/*# sourceMappingURL=style.css.map */
