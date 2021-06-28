@@ -1,0 +1,47 @@
+.jackpot {
+  @include flex(column, center, center, false);
+
+  h1 {
+    @include ff-gothic;
+    @include font-size($text-xl);
+    color: $white;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .jackpot_container {
+    @include flex(column, center, center, false);
+    width: 100%;
+
+    padding: 72px 24px;
+
+    background-color: $white;
+    border-radius: 10px;
+
+    h2 {
+      @include ff-gothic;
+      @include font-size($text-l);
+      color: $primary;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .jackpot_game {
+    }
+
+    button {
+      margin-bottom: 48px
+    }
+
+    p {
+      @include ff-gothic;
+      @include font-size($text-xs);
+      color: $primary;
+      text-align: center;
+
+      span {
+        @include font-size($text-s);
+      }
+    }
+  }
+}

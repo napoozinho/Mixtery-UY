@@ -8,6 +8,10 @@
 /* Global CSS */
 @import "global.scss";
 
+/* Components */
+@import "components/jackpot_modal.scss";
+
 /* Pages */
 @import "pages/login.scss";
 @import "pages/video.scss";
+@import "pages/jackpot.scss";
