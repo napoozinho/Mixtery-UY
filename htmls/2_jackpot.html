@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jackpot - Mixtery UY</title>
   <link rel="stylesheet" href="../src/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   
@@ -35,16 +34,18 @@
 
         <h1>SORPRENDÉ TUS SENTIDOS</h1>
 
-        <div class="jackpot_container animate__animated animate__fadeInUp">
+        <div class="jackpot_container">
 
           <h2>¡JUGÁ Y GANÁ!</h2>
 
           <!-- JACKPOT START -->
           <div class="jackpot_game">
+            <img src="../src/images/jackpot.png" alt="">
           </div>
           <!-- JACKPOT END -->
 
-          <button class="btn">GIRAR</button>
+          <!-- SACAR ID: ES UN TEST -->
+          <button id="openModal" class="btn">GIRAR</button>
 
           <p>GIRA EL JACKPOT Y <br> <span>PARTICIPÁ DEL PREMIO</span></p>
 
@@ -56,7 +57,12 @@
 
   </div>
 
+  <!-- este script se queda -->
   <script src="../src/js/jackpot_modal.js"></script>
+
+  <!-- BORRAR ESTE SCRIPT ### BORRAR ESTE SCRIPT ### BORRAR ESTE SCRIPT-->
+  <script> const open_modal_btn = document.getElementById('openModal'); open_modal_btn.addEventListener('click', openModal); function openModal() { modal.classList.toggle('active');}</script>
+  <!-- BORRAR ESTE SCRIPT ### BORRAR ESTE SCRIPT ### BORRAR ESTE SCRIPT-->
   
 </body>
 </html>

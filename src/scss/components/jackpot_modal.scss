@@ -8,11 +8,12 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 
   width: 100vw;
   height: 100vh;
 
-  padding: 40px 16px;
+  padding: 80px 16px;
 
   background-color: rgba($color: #830925, $alpha: 0.25);
 

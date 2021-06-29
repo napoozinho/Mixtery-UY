@@ -36,6 +36,8 @@ input, select {
 }
 
 .btn {
+  position: relative;
+  z-index: 1;
   outline: none;
   border: none;
   background-color: $secondary;

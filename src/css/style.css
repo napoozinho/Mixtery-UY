@@ -48,6 +48,8 @@ input, select {
 }
 
 .btn {
+  position: relative;
+  z-index: 1;
   outline: none;
   border: none;
   background-color: #f7aa08;
@@ -76,9 +78,10 @@ input, select {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
-  padding: 40px 16px;
+  padding: 80px 16px;
   background-color: rgba(131, 9, 37, 0.25);
 }
 .modal_container.active {
@@ -303,7 +306,11 @@ input, select {
     font-size: 64px;
   }
 }
+.jackpot .jackpot_container .jackpot_game img {
+  width: 100%;
+}
 .jackpot .jackpot_container button {
+  margin-top: 20px;
   margin-bottom: 48px;
 }
 .jackpot .jackpot_container p {

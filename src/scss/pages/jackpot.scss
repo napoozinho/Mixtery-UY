@@ -27,9 +27,13 @@
     }
 
     .jackpot_game {
+      img {
+        width: 100%;
+      }
     }
 
     button {
+      margin-top: 20px;
       margin-bottom: 48px
     }
 
