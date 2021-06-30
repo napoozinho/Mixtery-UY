@@ -331,6 +331,7 @@ input, select {
   font-size: 36px;
   color: white;
   text-align: center;
+  margin-top: 40px;
   margin-bottom: 32px;
 }
 @media screen and (min-width: 640px) {
@@ -344,6 +345,7 @@ input, select {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  max-width: 1000px;
   width: 100%;
   padding: 72px 24px;
   background-color: white;
@@ -353,14 +355,14 @@ input, select {
   font-family: "Gothic";
   font-style: normal;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 20px;
   color: #db203b;
   text-align: center;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 640px) {
   .jackpot .jackpot_container h2 {
-    font-size: 64px;
+    font-size: 42px;
   }
 }
 .jackpot .jackpot_container .jackpot_game img {
