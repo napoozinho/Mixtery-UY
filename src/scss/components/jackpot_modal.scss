@@ -35,9 +35,14 @@
       margin-bottom: 32px;
 
       @include ff-gothic;
-      @include font-size($text-xl);
+      @include font-size($text-l);
       color: $primary;
-      text-align: center
+      text-align: center;
+
+      @media (max-width: 640px) {
+        font-size: 24px !important;
+      }
+
     }
 
     p {

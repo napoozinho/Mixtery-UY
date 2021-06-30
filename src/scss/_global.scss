@@ -8,6 +8,7 @@ body {
 }
 
 .background {
+  position: relative;
   @include flex(row, center, center, false);
   width: 100vw;
   min-height: 100vh;
@@ -28,7 +29,7 @@ body {
 
 .wrapper {
   width: 100%;
-  padding: 40px 0;
+  padding: 40px 0px 120px 0px;
 }
 
 input, select {
@@ -44,7 +45,7 @@ input, select {
   border-radius: 5px;
   cursor: pointer;
 
-  padding: 8px 32px;
+  padding: 14px 32px 8px 32px;
 
   @include ff-gothic;
   @include font-size($text-xs);

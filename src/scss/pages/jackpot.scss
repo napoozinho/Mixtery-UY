@@ -34,18 +34,14 @@
 
     button {
       margin-top: 20px;
-      margin-bottom: 48px
+      margin-bottom: 48px;
     }
 
     p {
       @include ff-gothic;
-      @include font-size($text-xs);
+      @include font-size($text-s);
       color: $primary;
       text-align: center;
-
-      span {
-        @include font-size($text-s);
-      }
     }
   }
 }
